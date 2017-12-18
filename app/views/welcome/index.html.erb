@@ -1,0 +1,22 @@
+<h1>Welcome!</h1>
+<table>
+  <thead>
+  </thead>
+  <tbody>
+    <% @data.each do |data| %>
+      <tr>
+        <td><%= data.id %></td>
+        <td><%= data.name %></td>
+        <td><%= data.last %></td>
+        <td><%= data.lowest_ask %></td>
+        <td><%= data.highest_bid %></td>
+        <td><%= data.percent_change %></td>
+        <td><%= data.base_volume %></td>
+        <td><%= data.quote_volume %></td>
+        <td><%= data.is_frozen %></td>
+        <td><%= data.high_24_hour %></td>
+        <td><%= data.low_24_hour %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
